@@ -1,0 +1,84 @@
+---
+layout: default
+---
+
+<div class="home">
+
+  <h1 class="page-heading">Avisos</h1>
+
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+        <p>{{post.excerpt}}</p>
+      </li>
+    {% endfor %}
+  </ul>
+
+  <h1 class="page-heading">Clientes Bloqueados</h1>
+  <p>Os serviços para os seguintes clientes estão oficialmente suspensa. Nenhum trabalhador está autorizado a prestar quaisquer serviços ou informações.</p>
+
+    <table class="demo highlight">
+      <thead>
+      <tr>
+        <th>Nome do Cliente</th>
+        <th>Data de Suspensão</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>Oasis Mozambique Refinery Lda</td>
+        <td>8 setembro 2016</td>
+      </tr>
+      <tr>
+        <td>Overseas Infrastructure Alliance Lda</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>Damco Mocambique Lda</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>Advent Construcoes Lda</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>Future Focus Consultancy Lda</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>Phoenix Companhia de Seguros S.A</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>Companhia Agro Industrial de Umbeluzi Lda</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>Africa Great Wall Cement Manufacturer Lda</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>Meondo Trading Mozambique Lda</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>Esimo Industries Lda</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>Nelvo International Lda</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>MGC RST Mining Lda</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tbody>
+    </table>
+
+</div>
